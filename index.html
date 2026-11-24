@@ -7,6 +7,7 @@
 <link rel="icon" href="data:," />
 <title>Cedars-Sinai Newsletters — Head &amp; Neck and Thyroid Cancer Programs</title>
 <meta name="description" content="All newsletters from the Cedars-Sinai Head and Neck Cancer Program (HN Gestalt) and Thyroid Cancer Program (Thyroid Insight, Catalyst and Compass), 2017–2026 — with a magazine-style flipbook reader." />
+<link rel="canonical" href="https://trunghung.github.io/cedars-sinai-newsletters/" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet" />
@@ -220,6 +221,10 @@
   .issue-meta .open{flex:none;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--muted)}
   .issue:hover .open{background:var(--red);border-color:var(--red);color:#fff}
   .issue .live-tag{align-self:flex-start;background:var(--red-soft);color:var(--red);font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:999px}
+  button.issue{font:inherit;text-align:left;width:100%;cursor:pointer}
+  .issue-cover-img{width:100%;aspect-ratio:17/22;object-fit:cover;border-radius:6px;box-shadow:0 8px 20px rgba(29,29,31,.12);display:block;background:#fff}
+  .issue[aria-current="true"]{border-color:var(--red);box-shadow:0 0 0 1px var(--red), var(--shadow-sm)}
+  .issue[aria-current="true"] .open{background:var(--red);border-color:var(--red);color:#fff}
 
   /* ---------- Inside ---------- */
   .inside-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
@@ -277,7 +282,7 @@
     <h1>Two programs.<br /><span>Every newsletter, one place.</span></h1>
     <p class="hero-intro">“This newsletter showcases our group’s clinical advances, our ongoing research, and our integrated service lines that reach across the many aspects of Cedars-Sinai. <em>We hope you enjoy reading about the collective efforts of our interdisciplinary team.</em>”</p>
     <div class="hero-actions">
-      <a class="btn btn-red" href="#flipbook">Read HN Gestalt 2026 — flipbook</a>
+      <a class="btn btn-red" href="#flipbook">Read the latest issue — flipbook</a>
       <a class="btn btn-ghost" href="#archive">Browse all 21 issues</a>
     </div>
     <div class="hero-stats">
@@ -294,8 +299,8 @@
     <div class="test-banner" role="region" aria-label="Flipbook test">
       <span class="tb-badge">▶ Test it</span>
       <div class="tb-text">
-        <strong>Try the new flipbook — HN Gestalt 2026</strong>
-        <span>Flip through the latest Head &amp; Neck issue like a magazine: two-page spread on a computer, page curl on your phone. No sign-in, nothing to install.</span>
+        <strong>Try the flipbook — now all 21 issues</strong>
+        <span>Every newsletter from both programs now flips like a magazine: two-page spread on a computer, page curl on your phone. Pick any issue below and read it here — no sign-in, nothing to install.</span>
       </div>
       <a class="tb-btn" href="#flipbook">Open the flipbook ↓</a>
     </div>
@@ -305,10 +310,10 @@
   <section class="section wrap" id="flipbook">
     <div class="section-head">
       <div>
-        <h2>HN Gestalt 2026 — the flipbook</h2>
-        <p>Vol 12, Issue 1 · Fall 2026. Cover story: the modernization of head &amp; neck staging — AJCC9 rolls out for salivary, nasopharynx and HPV(+) oropharynx cancers.</p>
+        <h2 id="readerTitle">HN Gestalt 2026 — the flipbook</h2>
+        <p id="readerDesc">Vol 12, Issue 1 · Fall 2026. Cover story: the modernization of head &amp; neck staging — AJCC9 rolls out for salivary, nasopharynx and HPV(+) oropharynx cancers.</p>
       </div>
-      <p class="section-note">4 pages · Self-hosted reader</p>
+      <p class="section-note" id="readerNote">4 pages · Self-hosted reader</p>
     </div>
 
     <div class="stage" id="stage">
@@ -326,12 +331,12 @@
           </div></div>
 
           <div class="leaf" id="leaf2" style="z-index:1">
-            <div class="face front"><img src="assets/pages/page-3.jpg" alt="Page 3 — New Cedars papers on oral cavity grade, ctHPVDNA and HPV+ diagnoses; interdisciplinary hires; Tapestry" /></div>
-            <div class="face back"><img src="assets/pages/page-4.jpg" alt="Back cover — Jonathan Garcia RN, 2026 President's Award winner; HN Clinical Trials at Cedars-Sinai; program address and contact" /></div>
+            <div class="face front"><img id="imgP3" src="assets/pages/page-3.jpg" alt="Page 3 — New Cedars papers on oral cavity grade, ctHPVDNA and HPV+ diagnoses; interdisciplinary hires; Tapestry" /></div>
+            <div class="face back"><img id="imgP4" src="assets/pages/page-4.jpg" alt="Back cover — Jonathan Garcia RN, 2026 President's Award winner; HN Clinical Trials at Cedars-Sinai; program address and contact" /></div>
           </div>
           <div class="leaf" id="leaf1" style="z-index:2">
-            <div class="face front"><img src="assets/pages/page-1.jpg" alt="Cover, page 1 — Head & Neck Gestalt, Vol 12 Issue 1, Fall 2026: The modernization of head & neck staging, AJCC9 rolls out for salivary, NPC, and OPC" /></div>
-            <div class="face back"><img src="assets/pages/page-2.jpg" alt="Page 2 — Brevia: AJCC9 HN staging; new additions to the HN radiology team; Spotlight on the Head & Neck Anesthesia Service" /></div>
+            <div class="face front"><img id="imgP1" src="assets/pages/page-1.jpg" alt="Cover, page 1 — Head & Neck Gestalt, Vol 12 Issue 1, Fall 2026: The modernization of head & neck staging, AJCC9 rolls out for salivary, NPC, and OPC" /></div>
+            <div class="face back"><img id="imgP2" src="assets/pages/page-2.jpg" alt="Page 2 — Brevia: AJCC9 HN staging; new additions to the HN radiology team; Spotlight on the Head & Neck Anesthesia Service" /></div>
           </div>
 
           <div class="spine" aria-hidden="true"></div>
@@ -339,7 +344,7 @@
           <button class="edge next" id="edgeNext" type="button" aria-label="Next pages"><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></span></button>
         </div>
 
-        <div class="single" role="group" aria-label="HN Gestalt 2026 flipbook, single-page view">
+        <div class="single" role="group" aria-label="Newsletter flipbook, single-page view" id="singleGroup">
           <div class="single-frame" id="singleFrame">
             <img class="single-under" id="singleUnder" src="assets/pages/page-1.jpg" alt="" aria-hidden="true" />
             <div class="single-shade" id="singleShade" aria-hidden="true"></div>
@@ -372,7 +377,7 @@
           </div>
         </div>
 
-        <div class="thumbs" role="group" aria-label="Jump to a page">
+        <div class="thumbs" role="group" aria-label="Jump to a page" id="thumbs">
           <button class="thumb" type="button" data-page="1" aria-current="true"><img src="assets/pages/page-1.jpg" alt="" /><span class="tlabel">1 · Cover</span></button>
           <button class="thumb" type="button" data-page="2" aria-current="false"><img src="assets/pages/page-2.jpg" alt="" /><span class="tlabel">2 · Inside</span></button>
           <button class="thumb" type="button" data-page="3" aria-current="false"><img src="assets/pages/page-3.jpg" alt="" /><span class="tlabel">3 · Inside</span></button>
@@ -380,9 +385,9 @@
         </div>
 
         <div class="dl-row">
-          <a class="dl" href="assets/hn-gestalt-2026.pdf" download>
+          <a class="dl" id="pdfLink" href="assets/hn-gestalt-2026.pdf" download>
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M6.5 10.5L12 16l5.5-5.5M4 20h16"/></svg>
-            Download the PDF
+            <span id="pdfLabel">Download the PDF</span>
           </a>
           <span>All 21 issues live in the</span>
           <a class="plain" href="https://app.box.com/s/bibsh7cemjgon50kcif6y9yehz6emvu4" target="_blank" rel="noopener">newsletter folder on Box
@@ -408,9 +413,9 @@
         <p>Surgery, radiation, medical oncology, speech, nutrition and survivorship, working as one team. <em>Gestalt</em> — the whole picture of how complex head and neck cancers are treated together.</p>
         <div class="p-series"><span>11 issues</span><span>2017 – 2026</span><span>Latest: Fall 2026</span></div>
         <div class="p-actions">
-          <a class="btn btn-dark" href="#flipbook">Read the 2026 flipbook</a>
+          <button class="btn btn-dark" type="button" data-open-issue="hn-2026">Read the 2026 flipbook</button>
           <button class="btn btn-ghost" type="button" data-filter-jump="hn">HN archive ↓</button>
-          <span class="p-count">PDFs on Box</span>
+          <span class="p-count">All 11 in the flipbook</span>
         </div>
       </article>
       <article class="program-card">
@@ -419,9 +424,9 @@
         <p>From <em>Thyroid Insight</em> in 2017, through <em>Thyroid Catalyst</em>, to today’s <em>Thyroid Compass</em> — surgery, endocrinology, oncology, radiology and pathology around each patient.</p>
         <div class="p-series"><span>10 issues</span><span>2017 – 2026</span><span>Latest: 2026</span></div>
         <div class="p-actions">
-          <a class="btn btn-dark" href="https://app.box.com/s/bibsh7cemjgon50kcif6y9yehz6emvu4" target="_blank" rel="noopener">Read the latest PDF</a>
+          <button class="btn btn-dark" type="button" data-open-issue="th-2026">Read the 2026 flipbook</button>
           <button class="btn btn-ghost" type="button" data-filter-jump="thyroid">Thyroid archive ↓</button>
-          <span class="p-count">PDFs on Box</span>
+          <span class="p-count">All 10 in the flipbook</span>
         </div>
       </article>
     </div>
@@ -433,7 +438,7 @@
       <div class="section-head">
         <div>
           <h2>All issues</h2>
-          <p>Every newsletter from both programs, newest first — the complete summary index. HN Gestalt 2026 opens in the flipbook above; every other card opens its PDF.</p>
+          <p>Every newsletter from both programs, newest first — the complete summary index. Every card opens its issue in the flipbook reader above; the PDFs remain in the Box folder.</p>
         </div>
         <p class="section-note" id="archiveNote">21 issues · 2017 – 2026</p>
       </div>
@@ -489,10 +494,11 @@
         <a href="#programs">Programs</a>
         <a href="#archive">All Issues</a>
         <a href="https://app.box.com/s/bibsh7cemjgon50kcif6y9yehz6emvu4" target="_blank" rel="noopener">PDF Library (Box)</a>
+        <a href="https://trunghung.github.io/cedars-sinai-newsletters/" target="_blank" rel="noopener">Live site — GitHub Pages</a>
         <a href="https://www.cedars-sinai.org/home.html" target="_blank" rel="noopener">Cedars-Sinai.org</a>
       </nav>
     </div>
-    <p class="footer-fine">Cedars-Sinai Head and Neck Cancer Program and Thyroid Cancer Program — newsletter archive, 2017–2026. HN Gestalt 2026 is readable in the flipbook on this page and downloadable as a PDF; all other issues open as PDFs from the programs’ Box folder. Issue covers in the archive are typographic representations of each edition. For appointments, referrals and medical information, please use cedars-sinai.org.</p>
+    <p class="footer-fine">Cedars-Sinai Head and Neck Cancer Program and Thyroid Cancer Program — newsletter archive, 2017–2026. All 21 issues are readable in the flipbook on this page, with the real cover of each edition shown in the archive; the original PDFs live in the programs’ Box folder, and HN Gestalt 2026 is also downloadable here as a PDF. For appointments, referrals and medical information, please use cedars-sinai.org.</p>
   </div>
 </footer>
 
@@ -513,70 +519,55 @@
   var BOX = "https://app.box.com/s/bibsh7cemjgon50kcif6y9yehz6emvu4";
 
   /* ================= Archive data ================= */
-  var CS_MARK = '<svg class="dot" viewBox="0 0 40 40" aria-hidden="true"><path fill="#c8102e" d="M20.6 3.2c-5-3.4-12-2.3-15.7 2.6C1.1 10.9 2 18.5 6.8 22.6l3-3.4C6.4 16 6 11.4 8.4 8.1c2.3-3.1 6.6-3.9 10-1.9l2.2-3zM19.4 36.8c5 3.4 12 2.3 15.7-2.6 3.8-5.1 2.9-12.7-1.9-16.8l-3 3.4c3.4 3.2 3.8 7.8 1.4 11.1-2.3 3.1-6.6 3.9-10 1.9l-2.2 3z"/><path fill="#c8102e" d="M27.5 12.5c-3.2-2-7.4-1.4-10 1.2l-7.2 7.2 3.2 3.2 7-7c1.4-1.4 3.5-1.8 5.2-.9l1.8-3.7zM12.5 27.5c3.2 2 7.4 1.4 10-1.2l7.2-7.2-3.2-3.2-7 7c-1.4 1.4-3.5 1.8-5.2.9l-1.8 3.7z"/></svg>';
-
   var ISSUES = [
     /* Head & Neck — HN Gestalt (11) */
-    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2026", note:"Vol 12 · Issue 1", accent:"#002856", flipbook:true },
-    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2025", accent:"#0b3d66" },
-    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2024", note:"Issue 2", accent:"#124a73" },
-    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2024", note:"Issue 1", accent:"#0a4a7a" },
-    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2023", accent:"#0b3d66" },
-    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2022", accent:"#002856" },
-    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2021", accent:"#124a73" },
-    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2020", accent:"#0a4a7a" },
-    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2019", accent:"#0b3d66" },
-    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2018", accent:"#002856" },
-    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2017", accent:"#124a73" },
+    { id:"hn-2026", dir:"assets/pages", prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2026", note:"Vol 12 · Issue 1" },
+    { id:"hn-2025", dir:"assets/issues/hn-2025", prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2025", note:"Vol 11 · Issue 1" },
+    { id:"hn-2024-i2", dir:"assets/issues/hn-2024-i2", prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2024", note:"Issue 2" },
+    { id:"hn-2024-i1", dir:"assets/issues/hn-2024-i1", prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2024", note:"Issue 1" },
+    { id:"hn-2023", dir:"assets/issues/hn-2023", prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2023" },
+    { id:"hn-2022", dir:"assets/issues/hn-2022", prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2022" },
+    { id:"hn-2021", dir:"assets/issues/hn-2021", prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2021" },
+    { id:"hn-2020", dir:"assets/issues/hn-2020", prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2020" },
+    { id:"hn-2019", dir:"assets/issues/hn-2019", prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2019" },
+    { id:"hn-2018", dir:"assets/issues/hn-2018", prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2018", note:"Vol 5 · Issue 1" },
+    { id:"hn-2017", dir:"assets/issues/hn-2017", prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2017", note:"Vol 4 · Issue 1" },
     /* Thyroid (10) */
-    { prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Compass", year:"2026", accent:"#17323f" },
-    { prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Compass", year:"2025", accent:"#17323f" },
-    { prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Catalyst", year:"2024", accent:"#c8102e" },
-    { prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Catalyst", year:"2023", accent:"#c8102e" },
-    { prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Catalyst", year:"2022", accent:"#c8102e" },
-    { prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Catalyst", year:"2021", accent:"#c8102e" },
-    { prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Catalyst", year:"2020", accent:"#c8102e" },
-    { prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Catalyst", year:"2019", accent:"#c8102e" },
-    { prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Catalyst", year:"2018", accent:"#c8102e" },
-    { prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Insight", year:"2017", accent:"#8a7f6d" }
+    { id:"th-2026", dir:"assets/issues/th-2026", prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Compass", year:"2026", note:"Vol 10 · Issue 1" },
+    { id:"th-2025", dir:"assets/issues/th-2025", prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Compass", year:"2025" },
+    { id:"th-2024", dir:"assets/issues/th-2024", prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Catalyst", year:"2024", note:"Vol 8 · Issue 1" },
+    { id:"th-2023", dir:"assets/issues/th-2023", prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Catalyst", year:"2023" },
+    { id:"th-2022", dir:"assets/issues/th-2022", prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Catalyst", year:"2022" },
+    { id:"th-2021", dir:"assets/issues/th-2021", prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Catalyst", year:"2021" },
+    { id:"th-2020", dir:"assets/issues/th-2020", prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Catalyst", year:"2020" },
+    { id:"th-2019", dir:"assets/issues/th-2019", prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Catalyst", year:"2019" },
+    { id:"th-2018", dir:"assets/issues/th-2018", prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Catalyst", year:"2018" },
+    { id:"th-2017", dir:"assets/issues/th-2017", prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Insight", year:"2017" }
   ];
 
-  function coverHTML(issue){
-    var parts = issue.series.split(" ");
-    var main, last = "";
-    if(issue.series === "HN Gestalt"){ main = "HN"; last = "Gestalt"; }
-    else { main = parts[0]; last = parts.slice(1).join(" "); }
-    var title = last ? main + '<em>' + last + (issue.note ? ' · ' + issue.note : '') + '</em>' : issue.series;
-    return '<div class="cover small" style="--cover-accent:' + issue.accent + '">' +
-      '<div class="c-brand">' + CS_MARK + '<span>Cedars Sinai</span></div>' +
-      '<div class="c-series">' + title + '</div>' +
-      '<div class="c-rule"></div>' +
-      '<div class="c-foot"><div class="c-year">' + issue.year + '</div>' +
-      '<div class="c-prog">Newsletter<br />' + issue.progLine + '</div></div></div>';
+  function issueById(id){
+    for(var i = 0; i < ISSUES.length; i++){ if(ISSUES[i].id === id) return ISSUES[i]; }
+    return ISSUES[0];
   }
+  function issueLabel(issue){ return issue.series + ' ' + issue.year + (issue.note ? ' · ' + issue.note : ''); }
 
   var grid = document.getElementById('archiveGrid');
   var archiveNote = document.getElementById('archiveNote');
   var chips = Array.prototype.slice.call(document.querySelectorAll('.chip[data-filter]'));
   var currentFilter = "all";
 
+  var currentIssueId = "hn-2026";
+
   function renderArchive(){
     var shown = ISSUES.filter(function(i){ return currentFilter === "all" || i.prog === currentFilter; });
     var html = "";
     shown.forEach(function(issue){
-      var label = issue.series + ' ' + issue.year + (issue.note ? ' ' + issue.note : '');
-      if(issue.flipbook){
-        html += '<a class="issue" href="#flipbook" aria-label="Read ' + label + ' in the flipbook on this page">' +
-          coverHTML(issue) +
-          '<span class="live-tag">Flipbook · Read here</span>' +
-          '<span class="issue-meta"><span class="t">' + issue.series + '<span>' + issue.year + (issue.note ? ' · ' + issue.note : '') + ' · Flipbook + PDF</span></span>' +
-          '<span class="open" aria-hidden="true">↑</span></span></a>';
-      } else {
-        html += '<a class="issue" href="' + BOX + '" target="_blank" rel="noopener" aria-label="Open ' + label + ' PDF on Box">' +
-          coverHTML(issue) +
-          '<span class="issue-meta"><span class="t">' + issue.series + '<span>' + issue.year + (issue.note ? ' · ' + issue.note : '') + ' · PDF</span></span>' +
-          '<span class="open" aria-hidden="true">→</span></span></a>';
-      }
+      var label = issueLabel(issue);
+      html += '<button class="issue" type="button" data-issue="' + issue.id + '" aria-current="' + (issue.id === currentIssueId ? 'true' : 'false') + '" aria-label="Read ' + label + ' in the flipbook on this page">' +
+        '<img class="issue-cover-img" src="' + issue.dir + '/cover.jpg" alt="" loading="lazy" />' +
+        '<span class="live-tag">Flipbook · Read here</span>' +
+        '<span class="issue-meta"><span class="t">' + issue.series + '<span>' + issue.year + (issue.note ? ' · ' + issue.note : '') + ' · Flipbook</span></span>' +
+        '<span class="open" aria-hidden="true">↑</span></span></button>';
     });
     grid.innerHTML = html;
     archiveNote.textContent = currentFilter === "all" ? "21 issues · 2017 – 2026"
@@ -595,17 +586,90 @@
       document.getElementById('archive').scrollIntoView({ behavior:'smooth', block:'start' });
     });
   });
+  grid.addEventListener('click', function(e){
+    var card = e.target && e.target.closest ? e.target.closest('[data-issue]') : null;
+    if(card) loadIssue(card.getAttribute('data-issue'), true);
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-open-issue]'), function(b){
+    b.addEventListener('click', function(){ loadIssue(b.getAttribute('data-open-issue'), true); });
+  });
   renderArchive();
 
-  /* ================= Flipbook (HN Gestalt 2026) ================= */
+  /* ================= Flipbook (all 21 issues) ================= */
   var TOTAL = 4;
-  var PAGES = [
-    { src:"assets/pages/page-1.jpg", alt:"Cover, page 1 — Head & Neck Gestalt, Vol 12 Issue 1, Fall 2026" },
-    { src:"assets/pages/page-2.jpg", alt:"Page 2 — Brevia: AJCC9 HN staging; HN radiology team additions; Spotlight on the Head & Neck Anesthesia Service" },
-    { src:"assets/pages/page-3.jpg", alt:"Page 3 — New Cedars papers on oral cavity grade, ctHPVDNA and HPV+ diagnoses; interdisciplinary hires; Tapestry" },
-    { src:"assets/pages/page-4.jpg", alt:"Back cover — Jonathan Garcia RN, 2026 President's Award winner; HN Clinical Trials at Cedars-Sinai; program contact" }
+  var HN2026_ALTS = [
+    "Cover, page 1 — Head & Neck Gestalt, Vol 12 Issue 1, Fall 2026",
+    "Page 2 — Brevia: AJCC9 HN staging; HN radiology team additions; Spotlight on the Head & Neck Anesthesia Service",
+    "Page 3 — New Cedars papers on oral cavity grade, ctHPVDNA and HPV+ diagnoses; interdisciplinary hires; Tapestry",
+    "Back cover — Jonathan Garcia RN, 2026 President's Award winner; HN Clinical Trials at Cedars-Sinai; program contact"
   ];
+  var PAGE_ROLES = ["Cover, page 1", "Page 2", "Page 3", "Back cover, page 4"];
+  var PAGES = [];
+  var currentIssue = issueById("hn-2026");
   var spreadIndex = 0, pageIndex = 0, animating = false, singleAnimating = false;
+
+  function buildPages(issue){
+    var label = issueLabel(issue);
+    var pages = [];
+    for(var i = 0; i < TOTAL; i++){
+      pages.push({
+        src: issue.dir + "/page-" + (i + 1) + ".jpg",
+        alt: issue.id === "hn-2026" ? HN2026_ALTS[i] : PAGE_ROLES[i] + " — " + label + ", " + issue.progLine
+      });
+    }
+    return pages;
+  }
+
+  function loadIssue(id, scroll){
+    var issue = issueById(id);
+    currentIssue = issue;
+    currentIssueId = issue.id;
+    PAGES = buildPages(issue);
+    spreadIndex = 0; pageIndex = 0; animating = false; singleAnimating = false;
+    leaf1.classList.remove('turning'); leaf2.classList.remove('turning');
+    singleTop.classList.remove('curling'); singleTop.style.transform = '';
+    singleShade.classList.remove('curling'); singleShade.style.opacity = '';
+
+    document.getElementById('readerTitle').textContent = issueLabel(issue) + " — the flipbook";
+    document.getElementById('readerDesc').textContent = issue.id === "hn-2026"
+      ? "Vol 12, Issue 1 · Fall 2026. Cover story: the modernization of head & neck staging — AJCC9 rolls out for salivary, nasopharynx and HPV(+) oropharynx cancers."
+      : issue.progLine + " · " + issueLabel(issue) + ". Read it here in the flipbook — two-page spread on a computer, page curl on your phone.";
+    document.getElementById('readerNote').textContent = "4 pages · " + issue.series + " " + issue.year;
+    document.getElementById('book').setAttribute('aria-label', issueLabel(issue) + " flipbook, two-page spread view");
+
+    var faceImgs = [document.getElementById('imgP1'), document.getElementById('imgP2'), document.getElementById('imgP3'), document.getElementById('imgP4')];
+    for(var i = 0; i < TOTAL; i++){ faceImgs[i].src = PAGES[i].src; faceImgs[i].alt = PAGES[i].alt; }
+
+    var thumbsEl = document.getElementById('thumbs');
+    var tHtml = "";
+    var tLabels = ["1 · Cover", "2 · Inside", "3 · Inside", "4 · Back cover"];
+    for(var t = 0; t < TOTAL; t++){
+      tHtml += '<button class="thumb" type="button" data-page="' + (t + 1) + '" aria-current="false"><img src="' + PAGES[t].src + '" alt="" /><span class="tlabel">' + tLabels[t] + '</span></button>';
+    }
+    thumbsEl.innerHTML = tHtml;
+    thumbs = Array.prototype.slice.call(thumbsEl.querySelectorAll('.thumb'));
+    thumbs.forEach(function(th){
+      th.addEventListener('click', function(){ goToPage(parseInt(th.getAttribute('data-page'), 10) - 1); });
+    });
+
+    var pdfLink = document.getElementById('pdfLink');
+    var pdfLabel = document.getElementById('pdfLabel');
+    if(issue.id === "hn-2026"){
+      pdfLink.setAttribute('href', 'assets/hn-gestalt-2026.pdf');
+      pdfLink.setAttribute('download', '');
+      pdfLink.removeAttribute('target'); pdfLink.removeAttribute('rel');
+      pdfLabel.textContent = "Download the PDF";
+    } else {
+      pdfLink.setAttribute('href', BOX);
+      pdfLink.removeAttribute('download');
+      pdfLink.setAttribute('target', '_blank'); pdfLink.setAttribute('rel', 'noopener');
+      pdfLabel.textContent = "Open this issue’s PDF on Box";
+    }
+
+    renderArchive();
+    render();
+    if(scroll) document.getElementById('flipbook').scrollIntoView({ behavior:'smooth', block:'start' });
+  }
 
   var leaf1 = document.getElementById('leaf1');
   var leaf2 = document.getElementById('leaf2');
@@ -800,7 +864,7 @@
   });
 
   window.addEventListener('resize', function(){ render(); });
-  render();
+  loadIssue("hn-2026", false);
 })();
 </script>
 </body>
