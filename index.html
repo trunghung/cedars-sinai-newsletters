@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>Cedars-Sinai Newsletters — Head &amp; Neck and Thyroid Cancer Programs</title>
+<meta name="description" content="All newsletters from the Cedars-Sinai Head and Neck Cancer Program (HN Gestalt) and Thyroid Cancer Program (Thyroid Insight, Catalyst and Compass), 2017–2026 — with a magazine-style flipbook reader." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#ffffff; --bg2:#f5f5f7; --bg3:#fbfbfd;
+    --surface:#ffffff;
+    --ink:#1d1d1f; --ink2:#424245; --muted:#6e6e73; --muted2:#86868b;
+    --line:#d2d2d7; --line2:#e8e8ed;
+    --red:#c8102e; --red-dark:#a50d26; --red-soft:#fdf0f1;
+    --navy:#002856; --teal:#17323f; --blue:#0066cc;
+    --stage:#ececf0;
+    --shadow:0 20px 50px rgba(29,29,31,.08), 0 2px 8px rgba(29,29,31,.05);
+    --shadow-sm:0 8px 24px rgba(29,29,31,.07);
+    --book-shadow:0 30px 70px rgba(0,0,0,.28), 0 4px 18px rgba(0,0,0,.18);
+    --header-bg:rgba(255,255,255,.82);
+    --radius:22px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#000000; --bg2:#161617; --bg3:#1d1d1f;
+      --surface:#1c1c1e;
+      --ink:#f5f5f7; --ink2:#d6d6da; --muted:#a1a1a6; --muted2:#86868b;
+      --line:#424245; --line2:#2c2c2e;
+      --red:#ff4d6a; --red-dark:#ff6b80; --red-soft:#2a171a;
+      --navy:#7fb3e8; --teal:#9fc3d4; --blue:#2997ff;
+      --stage:#101012;
+      --shadow:0 20px 50px rgba(0,0,0,.5);
+      --shadow-sm:0 8px 24px rgba(0,0,0,.4);
+      --book-shadow:0 30px 70px rgba(0,0,0,.8), 0 4px 18px rgba(0,0,0,.6);
+      --header-bg:rgba(0,0,0,.78);
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{transition:none!important; animation:none!important} }
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;font-size:17px;line-height:1.55}
+  a{color:var(--blue);text-decoration:none}
+  a:hover{text-decoration:underline}
+  button{font:inherit;cursor:pointer}
+  button,[role="button"],select,summary,input:not([type="checkbox"],[type="radio"]){min-height:2.25rem}
+  .serif{font-family:"Newsreader",Georgia,"Times New Roman",serif}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  .wrap-narrow{max-width:860px;margin:0 auto;padding:0 24px}
+
+  /* ---------- Header ---------- */
+  header.site{position:sticky;top:0;z-index:60;background:var(--header-bg);-webkit-backdrop-filter:saturate(1.8) blur(20px);backdrop-filter:saturate(1.8) blur(20px);border-bottom:1px solid var(--line2)}
+  .header-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:11px;padding-bottom:11px}
+  .logo-chip{display:inline-flex;align-items:center;background:#fff;border:1px solid var(--line2);border-radius:12px;padding:7px 14px 7px 10px;line-height:0;flex:none}
+  .logo-chip img{height:30px;width:auto;display:block}
+  .header-nav{display:flex;align-items:center;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+  .header-nav a{text-decoration:none;font-size:14px;font-weight:500;color:var(--ink2);padding:9px 13px;border-radius:999px;min-height:36px;display:inline-flex;align-items:center}
+  .header-nav a:hover{background:var(--bg2);color:var(--ink);text-decoration:none}
+  .header-nav a.cta{background:var(--ink);color:var(--bg);font-weight:600}
+  .header-nav a.cta:hover{background:var(--red);color:#fff}
+  @media (max-width:680px){
+    .header-nav a.hide-sm{display:none}
+    .header-nav a{padding:7px 9px;font-size:13px}
+    .header-nav a.cta{padding:8px 14px}
+    .logo-chip{padding:6px 11px 6px 8px}
+    .logo-chip img{height:24px}
+    .header-in{gap:10px;padding-top:9px;padding-bottom:9px}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{padding:68px 0 0;text-align:center}
+  .hero-eyebrow{font-size:14px;font-weight:600;letter-spacing:.02em;color:var(--red);margin:0 0 14px}
+  .hero h1{font-size:clamp(42px,7vw,72px);line-height:1.04;letter-spacing:-.025em;font-weight:700;margin:0 auto;max-width:840px}
+  .hero h1 span{color:var(--muted)}
+  .hero-intro{max-width:700px;margin:24px auto 0;font-size:19px;line-height:1.6;color:var(--muted)}
+  .hero-intro em{font-style:normal;color:var(--ink)}
+  .hero-actions{margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;border-radius:999px;padding:12px 24px;font-size:16px;font-weight:600;min-height:48px;border:1px solid transparent;transition:background .18s ease, transform .18s ease}
+  .btn:active{transform:scale(.98)}
+  .btn:hover{text-decoration:none}
+  .btn-dark{background:var(--ink);color:var(--bg)}
+  .btn-dark:hover{background:var(--red);color:#fff}
+  .btn-red{background:var(--red);color:#fff}
+  .btn-red:hover{background:var(--red-dark);color:#fff}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+  .btn-ghost:hover{border-color:var(--ink)}
+  .hero-stats{display:flex;justify-content:center;gap:40px;margin-top:34px;flex-wrap:wrap}
+  .stat{text-align:center}
+  .stat b{font-size:24px;letter-spacing:-.02em;display:block;line-height:1.1}
+  .stat span{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  .hero-photo{margin:48px 0 0;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line2);text-align:left}
+  .hero-photo img{width:100%;height:auto;display:block;aspect-ratio:16/7.4;object-fit:cover}
+  .hero-photo figcaption{background:var(--surface);padding:14px 22px;font-size:13.5px;color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .hero-photo figcaption strong{color:var(--ink2);font-weight:600}
+
+  /* ---------- Test banner ---------- */
+  .test-banner{margin-top:44px;background:var(--red);color:#fff;border-radius:24px;padding:26px 28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;box-shadow:0 16px 40px rgba(200,16,46,.28)}
+  .test-banner .tb-badge{flex:none;background:#fff;color:var(--red-dark);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:7px 12px;border-radius:999px}
+  .test-banner .tb-text{flex:1;min-width:240px}
+  .test-banner .tb-text strong{display:block;font-size:19px;letter-spacing:-.01em;line-height:1.3}
+  .test-banner .tb-text span{font-size:14.5px;opacity:.92;line-height:1.5;display:block;margin-top:3px}
+  .test-banner .tb-btn{flex:none;background:#fff;color:var(--red-dark);font-weight:700;padding:13px 22px;border-radius:999px;font-size:15.5px;min-height:48px;display:inline-flex;align-items:center;gap:8px}
+  .test-banner .tb-btn:hover{background:#ffe9ec;text-decoration:none}
+
+  /* ---------- Sections ---------- */
+  .section{padding:72px 0 8px}
+  .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:26px;flex-wrap:wrap}
+  .section-head h2{font-size:clamp(30px,4.4vw,42px);letter-spacing:-.02em;line-height:1.1;margin:0;font-weight:700}
+  .section-head p{color:var(--muted);margin:8px 0 0;font-size:16px;max-width:560px;line-height:1.6}
+  .section-note{color:var(--muted);font-size:14.5px;margin:0;white-space:nowrap}
+
+  /* ---------- Flipbook reader ---------- */
+  .stage{background:var(--stage);border-radius:26px;padding:clamp(18px,4vw,44px) clamp(12px,3vw,38px) 26px}
+  .stage:fullscreen{overflow:auto;border-radius:0;padding:24px 16px}
+  .stage:fullscreen .book-wrap{max-width:min(1180px,96vw)}
+  .book-wrap{max-width:1020px;margin:0 auto}
+  .book-hint{text-align:center;font-size:13.5px;color:var(--muted);margin:0 0 16px}
+  .book-hint b{color:var(--ink);font-weight:600}
+  .book{position:relative;width:100%;aspect-ratio:17/11;margin:0 auto;perspective:2400px;user-select:none;-webkit-user-select:none;touch-action:pan-y}
+  .base-page{position:absolute;top:0;width:50%;height:100%;background:#fbfbf8;overflow:hidden}
+  @media (prefers-color-scheme: dark){ .base-page{background:#1c1c1e} }
+  .base-left{left:0;border-radius:6px 0 0 6px;box-shadow:var(--book-shadow)}
+  .base-right{right:0;border-radius:0 6px 6px 0;box-shadow:var(--book-shadow)}
+  .base-page .endmark{position:absolute;inset:0;display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:center;color:var(--muted2);font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:20px}
+  .leaf{position:absolute;top:0;right:0;width:50%;height:100%;transform-origin:left center;transform-style:preserve-3d;transition:transform .72s cubic-bezier(.32,.62,.28,1)}
+  .leaf.flipped{transform:rotateY(-180deg)}
+  .leaf .face{position:absolute;inset:0;overflow:hidden;background:#fff;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+  .leaf .face img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+  .leaf .face.front{border-radius:0 6px 6px 0;box-shadow:inset 14px 0 24px -14px rgba(0,0,0,.35)}
+  .leaf .face.back{transform:rotateY(180deg);border-radius:6px 0 0 6px;box-shadow:inset -14px 0 24px -14px rgba(0,0,0,.35)}
+  .leaf.turning .face{box-shadow:0 18px 34px rgba(0,0,0,.35)}
+  .spine{position:absolute;top:0;bottom:0;left:50%;width:56px;transform:translateX(-50%);background:linear-gradient(90deg,rgba(0,0,0,0),rgba(0,0,0,.16) 42%,rgba(0,0,0,.28) 50%,rgba(0,0,0,.16) 58%,rgba(0,0,0,0));pointer-events:none;z-index:40}
+  .edge{position:absolute;top:0;bottom:0;width:16%;z-index:45;border:0;background:transparent;padding:0;display:flex;align-items:center;color:var(--ink)}
+  .edge span{width:44px;height:44px;border-radius:50%;background:var(--bg);box-shadow:0 4px 14px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .18s}
+  .edge:hover span,.edge:focus-visible span{opacity:1}
+  .edge.prev{left:0;justify-content:flex-start;padding-left:8px}
+  .edge.next{right:0;justify-content:flex-end;padding-right:8px}
+  .edge[disabled]{display:none}
+  .single{display:none}
+  .single-frame{position:relative;width:min(480px,100%);margin:0 auto;aspect-ratio:17/22;border-radius:6px;overflow:hidden;box-shadow:var(--book-shadow);background:#fff;perspective:1600px;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+  .single-frame img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+  .single-under{position:absolute;inset:0}
+  .single-shade{position:absolute;inset:0;pointer-events:none;opacity:0;background:linear-gradient(90deg,rgba(0,0,0,.42),rgba(0,0,0,.14) 45%,rgba(0,0,0,0) 78%)}
+  .single-shade.curling{transition:opacity .58s ease}
+  .single-top{position:absolute;inset:0;transform-origin:left center;background:#fff;backface-visibility:hidden;-webkit-backface-visibility:hidden;will-change:transform}
+  .single-top::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;background:linear-gradient(90deg,rgba(0,0,0,.22),rgba(0,0,0,0) 30%,rgba(255,255,255,.28) 82%,rgba(0,0,0,.30))}
+  .single-top.curling{transition:transform .58s cubic-bezier(.32,.62,.28,1);box-shadow:20px 0 36px -12px rgba(0,0,0,.45)}
+  .single-top.curling::after{opacity:1;transition:opacity .3s ease}
+  @media (max-width:719px){ .book{display:none} .single{display:block} }
+  .controls{max-width:1020px;margin:20px auto 0;display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center}
+  .ctl-btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:10px 18px;font-size:14.5px;font-weight:500;min-height:44px}
+  .ctl-btn:hover{border-color:var(--muted2)}
+  .ctl-btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+  .ctl-btn[disabled]{opacity:.35;cursor:default}
+  .ctl-btn svg{flex:none}
+  .page-ind{font-size:14.5px;color:var(--muted);min-width:170px;text-align:center;font-variant-numeric:tabular-nums}
+  .page-ind strong{color:var(--ink);font-weight:600}
+  .controls .spacer{flex:1 1 auto}
+  .tool-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+  .thumbs{max-width:1020px;margin:22px auto 4px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .thumb{border:2px solid transparent;border-radius:10px;background:transparent;padding:4px;line-height:0;min-height:44px}
+  .thumb img{width:86px;height:auto;border-radius:5px;display:block;box-shadow:0 4px 12px rgba(0,0,0,.22)}
+  .thumb .tlabel{display:block;line-height:1.3;font-size:12px;color:var(--muted);margin-top:7px;text-align:center}
+  .thumb[aria-current="true"]{border-color:var(--red)}
+  .thumb[aria-current="true"] .tlabel{color:var(--ink);font-weight:600}
+  .dl-row{max-width:1020px;margin:18px auto 0;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;align-items:center;font-size:14px;color:var(--muted);text-align:center}
+  .dl-row a.dl{display:inline-flex;align-items:center;gap:8px;background:var(--red);color:#fff;font-weight:600;padding:11px 20px;border-radius:999px;min-height:44px}
+  .dl-row a.dl:hover{background:var(--red-dark);text-decoration:none}
+  .dl-row a.plain{display:inline-flex;align-items:center;gap:6px;padding:11px 8px;min-height:44px;color:var(--blue)}
+
+  /* ---------- Program cards ---------- */
+  .programs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media (max-width:820px){ .programs{grid-template-columns:1fr} }
+  .program-card{background:var(--bg3);border:1px solid var(--line2);border-radius:26px;padding:34px;display:flex;flex-direction:column}
+  .program-card .p-kicker{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin:0 0 10px}
+  .program-card h3{font-size:27px;letter-spacing:-.02em;line-height:1.15;margin:0 0 10px}
+  .program-card p{color:var(--muted);font-size:15.5px;line-height:1.65;margin:0}
+  .program-card .p-series{margin-top:16px;display:flex;gap:8px;flex-wrap:wrap}
+  .program-card .p-series span{font-size:12.5px;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:6px 12px;color:var(--ink2)}
+  .program-card .p-actions{margin-top:auto;padding-top:24px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .program-card .p-count{font-size:13px;color:var(--muted2)}
+
+  /* ---------- Covers ---------- */
+  .cover{width:100%;max-width:250px;aspect-ratio:3/4;background:#fff;color:#1d1d1f;border-radius:6px;box-shadow:0 14px 34px rgba(29,29,31,.16), 0 2px 6px rgba(29,29,31,.08);padding:20px 20px 16px;display:flex;flex-direction:column;position:relative;overflow:hidden;border:1px solid #ece7de}
+  .cover::after{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--cover-accent,#c8102e)}
+  .cover .c-brand{display:flex;align-items:center;gap:7px;font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6e6e73}
+  .cover .c-brand .dot{width:15px;height:15px;flex:none}
+  .cover .c-series{font-family:"Newsreader",Georgia,serif;font-size:27px;line-height:1.05;font-weight:500;margin-top:20px;letter-spacing:-.01em}
+  .cover .c-series em{display:block;font-style:italic;font-weight:300;font-size:19px;color:#6e6e73;margin-top:5px}
+  .cover .c-rule{width:34px;height:3px;border-radius:3px;background:var(--cover-accent,#c8102e);margin-top:16px}
+  .cover .c-foot{margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;gap:8px}
+  .cover .c-year{font-family:"Newsreader",Georgia,serif;font-size:40px;font-weight:300;line-height:1;color:#1d1d1f}
+  .cover .c-prog{font-size:9.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a8a8e;text-align:right;line-height:1.5}
+  .cover.small{max-width:none;padding:18px 18px 14px}
+  .cover.small .c-series{font-size:23px;margin-top:15px}
+  .cover.small .c-series em{font-size:16px}
+  .cover.small .c-year{font-size:34px}
+
+  /* ---------- Archive ---------- */
+  .archive-zone{background:var(--bg2);border-top:1px solid var(--line2);border-bottom:1px solid var(--line2);margin-top:72px;padding:64px 0 72px}
+  .filter-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+  .chip{border:1px solid var(--line);background:var(--surface);padding:9px 16px;border-radius:999px;font-size:14px;font-weight:500;cursor:pointer;color:var(--ink);min-height:40px}
+  .chip:hover{border-color:var(--muted2)}
+  .chip.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  @media (max-width:1020px){ .grid{grid-template-columns:repeat(3,1fr)} }
+  @media (max-width:720px){ .grid{grid-template-columns:repeat(2,1fr);gap:14px} }
+  @media (max-width:400px){ .grid{grid-template-columns:1fr} }
+  .issue{background:var(--surface);border:1px solid var(--line2);border-radius:20px;padding:18px;text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:14px;transition:transform .2s ease, box-shadow .2s ease}
+  .issue:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm);text-decoration:none}
+  .issue:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+  .issue .cover{box-shadow:0 8px 20px rgba(29,29,31,.12)}
+  .issue-meta{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+  .issue-meta .t{font-weight:600;font-size:15.5px;line-height:1.35}
+  .issue-meta .t span{display:block;font-weight:400;color:var(--muted);font-size:13.5px;margin-top:2px}
+  .issue-meta .open{flex:none;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--muted)}
+  .issue:hover .open{background:var(--red);border-color:var(--red);color:#fff}
+  .issue .live-tag{align-self:flex-start;background:var(--red-soft);color:var(--red);font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:999px}
+
+  /* ---------- Inside ---------- */
+  .inside-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  @media (max-width:820px){ .inside-grid{grid-template-columns:1fr} }
+  .inside-card{background:var(--surface);border:1px solid var(--line2);border-radius:20px;padding:30px 28px}
+  .inside-card .num{font-family:"Newsreader",Georgia,serif;font-style:italic;font-weight:300;font-size:19px;color:var(--red);margin:0 0 12px}
+  .inside-card h3{font-size:19px;font-weight:600;margin:0 0 10px;letter-spacing:-.01em}
+  .inside-card p{color:var(--muted);font-size:15.5px;line-height:1.65;margin:0}
+  .quote-block{margin:52px 0 0;background:var(--bg2);border-radius:26px;padding:42px 36px;text-align:center}
+  .quote-block blockquote{margin:0 auto;max-width:740px;font-size:22px;line-height:1.5;letter-spacing:-.01em;font-weight:500}
+  .quote-block cite{display:block;margin-top:16px;font-style:normal;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+
+  /* ---------- Footer ---------- */
+  footer.site{margin-top:80px;border-top:1px solid var(--line2);padding:44px 0 56px}
+  .footer-in{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:flex-start}
+  .footer-links{display:flex;gap:6px;flex-wrap:wrap}
+  .footer-links a{text-decoration:none;font-size:14px;font-weight:500;color:var(--ink2);padding:9px 12px;border-radius:999px;min-height:36px;display:inline-flex;align-items:center}
+  .footer-links a:hover{background:var(--bg2)}
+  .footer-fine{color:var(--muted);font-size:13.5px;line-height:1.7;margin-top:22px;max-width:56em}
+
+  /* ---------- Lightbox ---------- */
+  .lightbox{position:fixed;inset:0;z-index:100;background:rgba(10,10,12,.96);display:none;flex-direction:column;align-items:center;justify-content:center;padding:18px}
+  .lightbox.open{display:flex}
+  .lightbox img{max-width:min(860px,94vw);max-height:78vh;width:auto;height:auto;border-radius:4px;box-shadow:0 24px 60px rgba(0,0,0,.6);background:#fff}
+  .lb-bar{display:flex;align-items:center;gap:10px;margin-top:16px;flex-wrap:wrap;justify-content:center}
+  .lb-bar .page-ind{color:#a1a1a6}
+  .lb-bar .page-ind strong{color:#fff}
+  .lb-btn{display:inline-flex;align-items:center;gap:7px;background:#2c2c2e;color:#fff;border:1px solid #48484a;border-radius:999px;padding:10px 18px;font-size:14.5px;min-height:44px}
+  .lb-btn[disabled]{opacity:.35}
+  .lb-close{position:absolute;top:14px;right:14px;width:44px;height:44px;border-radius:50%;background:#2c2c2e;color:#fff;border:1px solid #48484a;font-size:20px;line-height:1;display:flex;align-items:center;justify-content:center}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap header-in">
+    <a class="logo-chip" href="https://www.cedars-sinai.org/home.html" target="_blank" rel="noopener" aria-label="Cedars-Sinai — cedars-sinai.org">
+      <img src="assets/cedars-logo.png" alt="Cedars Sinai" />
+    </a>
+    <nav class="header-nav" aria-label="Site">
+      <a href="#flipbook">Flipbook</a>
+      <a href="#programs" class="hide-sm">Programs</a>
+      <a href="#archive">All Issues</a>
+      <a href="#inside" class="hide-sm">Inside</a>
+      <a href="https://www.cedars-sinai.org/home.html" target="_blank" rel="noopener" class="hide-sm">Cedars-Sinai.org</a>
+      <a class="cta" href="https://app.box.com/s/bibsh7cemjgon50kcif6y9yehz6emvu4" target="_blank" rel="noopener">Open PDF Library</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- ================= HERO ================= -->
+  <section class="hero wrap">
+    <p class="hero-eyebrow">Cedars-Sinai Cancer · Head &amp; Neck and Thyroid Cancer Programs</p>
+    <h1>Two programs.<br /><span>Every newsletter, one place.</span></h1>
+    <p class="hero-intro">“This newsletter showcases our group’s clinical advances, our ongoing research, and our integrated service lines that reach across the many aspects of Cedars-Sinai. <em>We hope you enjoy reading about the collective efforts of our interdisciplinary team.</em>”</p>
+    <div class="hero-actions">
+      <a class="btn btn-red" href="#flipbook">Read HN Gestalt 2026 — flipbook</a>
+      <a class="btn btn-ghost" href="#archive">Browse all 21 issues</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><b>21</b><span>Issues</span></div>
+      <div class="stat"><b>2</b><span>Programs</span></div>
+      <div class="stat"><b>2017–2026</b><span>Archive</span></div>
+    </div>
+    <figure class="hero-photo">
+      <img src="assets/campus.jpg" alt="Cedars-Sinai Medical Center campus in Los Angeles, with its glass towers and plaza under a clear blue sky" />
+      <figcaption><span><strong>Cedars-Sinai Medical Center</strong> · Los Angeles, California</span><span>Samuel Oschin Comprehensive Cancer Institute</span></figcaption>
+    </figure>
+
+    <!-- Prominent flipbook test link -->
+    <div class="test-banner" role="region" aria-label="Flipbook test">
+      <span class="tb-badge">▶ Test it</span>
+      <div class="tb-text">
+        <strong>Try the new flipbook — HN Gestalt 2026</strong>
+        <span>Flip through the latest Head &amp; Neck issue like a magazine: two-page spread on a computer, page curl on your phone. No sign-in, nothing to install.</span>
+      </div>
+      <a class="tb-btn" href="#flipbook">Open the flipbook ↓</a>
+    </div>
+  </section>
+
+  <!-- ================= FLIPBOOK ================= -->
+  <section class="section wrap" id="flipbook">
+    <div class="section-head">
+      <div>
+        <h2>HN Gestalt 2026 — the flipbook</h2>
+        <p>Vol 12, Issue 1 · Fall 2026. Cover story: the modernization of head &amp; neck staging — AJCC9 rolls out for salivary, nasopharynx and HPV(+) oropharynx cancers.</p>
+      </div>
+      <p class="section-note">4 pages · Self-hosted reader</p>
+    </div>
+
+    <div class="stage" id="stage">
+      <div class="book-wrap">
+        <p class="book-hint" id="bookHint"><b>Flip through it like a magazine</b> — click a page edge, use the arrows, or swipe.</p>
+
+        <div class="book" id="book" role="group" aria-label="HN Gestalt 2026 flipbook, two-page spread view">
+          <div class="base-page base-left"><div class="endmark">
+            <svg width="40" height="40" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="4"><path d="M30.5 8.5A15 15 0 1 0 30.5 39.5"/><path d="M39 15.5A15 15 0 1 0 39 32.5" opacity=".55"/></g></svg>
+            <span>Cedars-Sinai<br />Head &amp; Neck<br />Cancer Program</span>
+          </div></div>
+          <div class="base-page base-right"><div class="endmark">
+            <svg width="40" height="40" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="4"><path d="M30.5 8.5A15 15 0 1 0 30.5 39.5"/><path d="M39 15.5A15 15 0 1 0 39 32.5" opacity=".55"/></g></svg>
+            <span>Samuel Oschin<br />Comprehensive<br />Cancer Institute</span>
+          </div></div>
+
+          <div class="leaf" id="leaf2" style="z-index:1">
+            <div class="face front"><img src="assets/pages/page-3.jpg" alt="Page 3 — New Cedars papers on oral cavity grade, ctHPVDNA and HPV+ diagnoses; interdisciplinary hires; Tapestry" /></div>
+            <div class="face back"><img src="assets/pages/page-4.jpg" alt="Back cover — Jonathan Garcia RN, 2026 President's Award winner; HN Clinical Trials at Cedars-Sinai; program address and contact" /></div>
+          </div>
+          <div class="leaf" id="leaf1" style="z-index:2">
+            <div class="face front"><img src="assets/pages/page-1.jpg" alt="Cover, page 1 — Head & Neck Gestalt, Vol 12 Issue 1, Fall 2026: The modernization of head & neck staging, AJCC9 rolls out for salivary, NPC, and OPC" /></div>
+            <div class="face back"><img src="assets/pages/page-2.jpg" alt="Page 2 — Brevia: AJCC9 HN staging; new additions to the HN radiology team; Spotlight on the Head & Neck Anesthesia Service" /></div>
+          </div>
+
+          <div class="spine" aria-hidden="true"></div>
+          <button class="edge prev" id="edgePrev" type="button" aria-label="Previous pages"><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></span></button>
+          <button class="edge next" id="edgeNext" type="button" aria-label="Next pages"><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></span></button>
+        </div>
+
+        <div class="single" role="group" aria-label="HN Gestalt 2026 flipbook, single-page view">
+          <div class="single-frame" id="singleFrame">
+            <img class="single-under" id="singleUnder" src="assets/pages/page-1.jpg" alt="" aria-hidden="true" />
+            <div class="single-shade" id="singleShade" aria-hidden="true"></div>
+            <div class="single-top" id="singleTop">
+              <img id="singleImg" src="assets/pages/page-1.jpg" alt="Cover, page 1 — Head & Neck Gestalt, Vol 12 Issue 1, Fall 2026" />
+            </div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button class="ctl-btn" id="btnPrev" type="button">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+            Previous
+          </button>
+          <div class="page-ind" id="pageInd" aria-live="polite"><strong>Cover</strong> · Page 1 of 4</div>
+          <button class="ctl-btn primary" id="btnNext" type="button">
+            Next
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
+          </button>
+          <div class="spacer"></div>
+          <div class="tool-row">
+            <button class="ctl-btn" id="btnZoom" type="button">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+              Read closer
+            </button>
+            <button class="ctl-btn" id="btnFull" type="button">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg>
+              Fullscreen
+            </button>
+          </div>
+        </div>
+
+        <div class="thumbs" role="group" aria-label="Jump to a page">
+          <button class="thumb" type="button" data-page="1" aria-current="true"><img src="assets/pages/page-1.jpg" alt="" /><span class="tlabel">1 · Cover</span></button>
+          <button class="thumb" type="button" data-page="2" aria-current="false"><img src="assets/pages/page-2.jpg" alt="" /><span class="tlabel">2 · Inside</span></button>
+          <button class="thumb" type="button" data-page="3" aria-current="false"><img src="assets/pages/page-3.jpg" alt="" /><span class="tlabel">3 · Inside</span></button>
+          <button class="thumb" type="button" data-page="4" aria-current="false"><img src="assets/pages/page-4.jpg" alt="" /><span class="tlabel">4 · Back cover</span></button>
+        </div>
+
+        <div class="dl-row">
+          <a class="dl" href="assets/hn-gestalt-2026.pdf" download>
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M6.5 10.5L12 16l5.5-5.5M4 20h16"/></svg>
+            Download the PDF
+          </a>
+          <span>All 21 issues live in the</span>
+          <a class="plain" href="https://app.box.com/s/bibsh7cemjgon50kcif6y9yehz6emvu4" target="_blank" rel="noopener">newsletter folder on Box
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROGRAMS ================= -->
+  <section class="section wrap" id="programs">
+    <div class="section-head">
+      <div>
+        <h2>The two programs</h2>
+        <p>Two interdisciplinary teams, two long-running newsletters — one shared commitment to telling the story of the work clearly.</p>
+      </div>
+    </div>
+    <div class="programs">
+      <article class="program-card">
+        <p class="p-kicker">Head &amp; Neck Cancer Program</p>
+        <h3>HN Gestalt</h3>
+        <p>Surgery, radiation, medical oncology, speech, nutrition and survivorship, working as one team. <em>Gestalt</em> — the whole picture of how complex head and neck cancers are treated together.</p>
+        <div class="p-series"><span>11 issues</span><span>2017 – 2026</span><span>Latest: Fall 2026</span></div>
+        <div class="p-actions">
+          <a class="btn btn-dark" href="#flipbook">Read the 2026 flipbook</a>
+          <button class="btn btn-ghost" type="button" data-filter-jump="hn">HN archive ↓</button>
+          <span class="p-count">PDFs on Box</span>
+        </div>
+      </article>
+      <article class="program-card">
+        <p class="p-kicker">Thyroid Cancer Program</p>
+        <h3>Thyroid Compass</h3>
+        <p>From <em>Thyroid Insight</em> in 2017, through <em>Thyroid Catalyst</em>, to today’s <em>Thyroid Compass</em> — surgery, endocrinology, oncology, radiology and pathology around each patient.</p>
+        <div class="p-series"><span>10 issues</span><span>2017 – 2026</span><span>Latest: 2026</span></div>
+        <div class="p-actions">
+          <a class="btn btn-dark" href="https://app.box.com/s/bibsh7cemjgon50kcif6y9yehz6emvu4" target="_blank" rel="noopener">Read the latest PDF</a>
+          <button class="btn btn-ghost" type="button" data-filter-jump="thyroid">Thyroid archive ↓</button>
+          <span class="p-count">PDFs on Box</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= ARCHIVE ================= -->
+  <section class="archive-zone" id="archive">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2>All issues</h2>
+          <p>Every newsletter from both programs, newest first — the complete summary index. HN Gestalt 2026 opens in the flipbook above; every other card opens its PDF.</p>
+        </div>
+        <p class="section-note" id="archiveNote">21 issues · 2017 – 2026</p>
+      </div>
+      <div class="filter-row" role="group" aria-label="Filter issues by program">
+        <button class="chip active" type="button" data-filter="all">All 21 issues</button>
+        <button class="chip" type="button" data-filter="hn">Head &amp; Neck — HN Gestalt (11)</button>
+        <button class="chip" type="button" data-filter="thyroid">Thyroid — Insight · Catalyst · Compass (10)</button>
+      </div>
+      <div class="grid" id="archiveGrid"></div>
+    </div>
+  </section>
+
+  <!-- ================= INSIDE ================= -->
+  <section class="section wrap" id="inside">
+    <div class="section-head">
+      <div>
+        <h2>Inside every issue</h2>
+        <p>What the newsletters cover, across both programs.</p>
+      </div>
+    </div>
+    <div class="inside-grid">
+      <article class="inside-card">
+        <p class="num">01</p>
+        <h3>Clinical advances</h3>
+        <p>New techniques, expanded service lines and care pathways — reported plainly, so referring physicians and patients can see what has changed and why it matters.</p>
+      </article>
+      <article class="inside-card">
+        <p class="num">02</p>
+        <h3>Ongoing research</h3>
+        <p>Studies, trials and findings from across Cedars-Sinai, connected to the clinic — research presented alongside the care it is meant to improve.</p>
+      </article>
+      <article class="inside-card">
+        <p class="num">03</p>
+        <h3>Integrated care</h3>
+        <p>Surgery, oncology, radiology, pathology, speech, nutrition and survivorship — not separate silos, but one interdisciplinary team around each patient.</p>
+      </article>
+    </div>
+    <div class="quote-block">
+      <blockquote>“We hope you enjoy reading about the collective efforts of our interdisciplinary team.”</blockquote>
+      <cite>From the newsletter introduction — Cedars-Sinai</cite>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-in">
+      <a class="logo-chip" href="https://www.cedars-sinai.org/home.html" target="_blank" rel="noopener" aria-label="Cedars-Sinai — cedars-sinai.org">
+        <img src="assets/cedars-logo.png" alt="Cedars Sinai" />
+      </a>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#flipbook">Flipbook</a>
+        <a href="#programs">Programs</a>
+        <a href="#archive">All Issues</a>
+        <a href="https://app.box.com/s/bibsh7cemjgon50kcif6y9yehz6emvu4" target="_blank" rel="noopener">PDF Library (Box)</a>
+        <a href="https://www.cedars-sinai.org/home.html" target="_blank" rel="noopener">Cedars-Sinai.org</a>
+      </nav>
+    </div>
+    <p class="footer-fine">Cedars-Sinai Head and Neck Cancer Program and Thyroid Cancer Program — newsletter archive, 2017–2026. HN Gestalt 2026 is readable in the flipbook on this page and downloadable as a PDF; all other issues open as PDFs from the programs’ Box folder. Issue covers in the archive are typographic representations of each edition. For appointments, referrals and medical information, please use cedars-sinai.org.</p>
+  </div>
+</footer>
+
+<!-- Lightbox / read closer -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged page view">
+  <button class="lb-close" id="lbClose" type="button" aria-label="Close enlarged view">×</button>
+  <img id="lbImg" src="assets/pages/page-1.jpg" alt="Enlarged newsletter page" />
+  <div class="lb-bar">
+    <button class="lb-btn" id="lbPrev" type="button">← Previous</button>
+    <div class="page-ind" id="lbInd"><strong>Cover</strong> · Page 1 of 4</div>
+    <button class="lb-btn" id="lbNext" type="button">Next →</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var BOX = "https://app.box.com/s/bibsh7cemjgon50kcif6y9yehz6emvu4";
+
+  /* ================= Archive data ================= */
+  var CS_MARK = '<svg class="dot" viewBox="0 0 40 40" aria-hidden="true"><path fill="#c8102e" d="M20.6 3.2c-5-3.4-12-2.3-15.7 2.6C1.1 10.9 2 18.5 6.8 22.6l3-3.4C6.4 16 6 11.4 8.4 8.1c2.3-3.1 6.6-3.9 10-1.9l2.2-3zM19.4 36.8c5 3.4 12 2.3 15.7-2.6 3.8-5.1 2.9-12.7-1.9-16.8l-3 3.4c3.4 3.2 3.8 7.8 1.4 11.1-2.3 3.1-6.6 3.9-10 1.9l-2.2 3z"/><path fill="#c8102e" d="M27.5 12.5c-3.2-2-7.4-1.4-10 1.2l-7.2 7.2 3.2 3.2 7-7c1.4-1.4 3.5-1.8 5.2-.9l1.8-3.7zM12.5 27.5c3.2 2 7.4 1.4 10-1.2l7.2-7.2-3.2-3.2-7 7c-1.4 1.4-3.5 1.8-5.2.9l-1.8 3.7z"/></svg>';
+
+  var ISSUES = [
+    /* Head & Neck — HN Gestalt (11) */
+    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2026", note:"Vol 12 · Issue 1", accent:"#002856", flipbook:true },
+    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2025", accent:"#0b3d66" },
+    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2024", note:"Issue 2", accent:"#124a73" },
+    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2024", note:"Issue 1", accent:"#0a4a7a" },
+    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2023", accent:"#0b3d66" },
+    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2022", accent:"#002856" },
+    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2021", accent:"#124a73" },
+    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2020", accent:"#0a4a7a" },
+    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2019", accent:"#0b3d66" },
+    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2018", accent:"#002856" },
+    { prog:"hn", progLine:"Head & Neck Cancer Program", series:"HN Gestalt", year:"2017", accent:"#124a73" },
+    /* Thyroid (10) */
+    { prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Compass", year:"2026", accent:"#17323f" },
+    { prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Compass", year:"2025", accent:"#17323f" },
+    { prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Catalyst", year:"2024", accent:"#c8102e" },
+    { prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Catalyst", year:"2023", accent:"#c8102e" },
+    { prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Catalyst", year:"2022", accent:"#c8102e" },
+    { prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Catalyst", year:"2021", accent:"#c8102e" },
+    { prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Catalyst", year:"2020", accent:"#c8102e" },
+    { prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Catalyst", year:"2019", accent:"#c8102e" },
+    { prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Catalyst", year:"2018", accent:"#c8102e" },
+    { prog:"thyroid", progLine:"Thyroid Cancer Program", series:"Thyroid Insight", year:"2017", accent:"#8a7f6d" }
+  ];
+
+  function coverHTML(issue){
+    var parts = issue.series.split(" ");
+    var main, last = "";
+    if(issue.series === "HN Gestalt"){ main = "HN"; last = "Gestalt"; }
+    else { main = parts[0]; last = parts.slice(1).join(" "); }
+    var title = last ? main + '<em>' + last + (issue.note ? ' · ' + issue.note : '') + '</em>' : issue.series;
+    return '<div class="cover small" style="--cover-accent:' + issue.accent + '">' +
+      '<div class="c-brand">' + CS_MARK + '<span>Cedars Sinai</span></div>' +
+      '<div class="c-series">' + title + '</div>' +
+      '<div class="c-rule"></div>' +
+      '<div class="c-foot"><div class="c-year">' + issue.year + '</div>' +
+      '<div class="c-prog">Newsletter<br />' + issue.progLine + '</div></div></div>';
+  }
+
+  var grid = document.getElementById('archiveGrid');
+  var archiveNote = document.getElementById('archiveNote');
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.chip[data-filter]'));
+  var currentFilter = "all";
+
+  function renderArchive(){
+    var shown = ISSUES.filter(function(i){ return currentFilter === "all" || i.prog === currentFilter; });
+    var html = "";
+    shown.forEach(function(issue){
+      var label = issue.series + ' ' + issue.year + (issue.note ? ' ' + issue.note : '');
+      if(issue.flipbook){
+        html += '<a class="issue" href="#flipbook" aria-label="Read ' + label + ' in the flipbook on this page">' +
+          coverHTML(issue) +
+          '<span class="live-tag">Flipbook · Read here</span>' +
+          '<span class="issue-meta"><span class="t">' + issue.series + '<span>' + issue.year + (issue.note ? ' · ' + issue.note : '') + ' · Flipbook + PDF</span></span>' +
+          '<span class="open" aria-hidden="true">↑</span></span></a>';
+      } else {
+        html += '<a class="issue" href="' + BOX + '" target="_blank" rel="noopener" aria-label="Open ' + label + ' PDF on Box">' +
+          coverHTML(issue) +
+          '<span class="issue-meta"><span class="t">' + issue.series + '<span>' + issue.year + (issue.note ? ' · ' + issue.note : '') + ' · PDF</span></span>' +
+          '<span class="open" aria-hidden="true">→</span></span></a>';
+      }
+    });
+    grid.innerHTML = html;
+    archiveNote.textContent = currentFilter === "all" ? "21 issues · 2017 – 2026"
+      : currentFilter === "hn" ? "11 issues · HN Gestalt · 2017 – 2026"
+      : "10 issues · Insight · Catalyst · Compass · 2017 – 2026";
+    chips.forEach(function(c){ c.classList.toggle('active', c.getAttribute('data-filter') === currentFilter); });
+  }
+
+  chips.forEach(function(c){
+    c.addEventListener('click', function(){ currentFilter = c.getAttribute('data-filter'); renderArchive(); });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-filter-jump]'), function(b){
+    b.addEventListener('click', function(){
+      currentFilter = b.getAttribute('data-filter-jump');
+      renderArchive();
+      document.getElementById('archive').scrollIntoView({ behavior:'smooth', block:'start' });
+    });
+  });
+  renderArchive();
+
+  /* ================= Flipbook (HN Gestalt 2026) ================= */
+  var TOTAL = 4;
+  var PAGES = [
+    { src:"assets/pages/page-1.jpg", alt:"Cover, page 1 — Head & Neck Gestalt, Vol 12 Issue 1, Fall 2026" },
+    { src:"assets/pages/page-2.jpg", alt:"Page 2 — Brevia: AJCC9 HN staging; HN radiology team additions; Spotlight on the Head & Neck Anesthesia Service" },
+    { src:"assets/pages/page-3.jpg", alt:"Page 3 — New Cedars papers on oral cavity grade, ctHPVDNA and HPV+ diagnoses; interdisciplinary hires; Tapestry" },
+    { src:"assets/pages/page-4.jpg", alt:"Back cover — Jonathan Garcia RN, 2026 President's Award winner; HN Clinical Trials at Cedars-Sinai; program contact" }
+  ];
+  var spreadIndex = 0, pageIndex = 0, animating = false, singleAnimating = false;
+
+  var leaf1 = document.getElementById('leaf1');
+  var leaf2 = document.getElementById('leaf2');
+  var btnPrev = document.getElementById('btnPrev');
+  var btnNext = document.getElementById('btnNext');
+  var edgePrev = document.getElementById('edgePrev');
+  var edgeNext = document.getElementById('edgeNext');
+  var pageInd = document.getElementById('pageInd');
+  var singleFrame = document.getElementById('singleFrame');
+  var singleImg = document.getElementById('singleImg');
+  var singleTop = document.getElementById('singleTop');
+  var singleUnder = document.getElementById('singleUnder');
+  var singleShade = document.getElementById('singleShade');
+  var thumbs = Array.prototype.slice.call(document.querySelectorAll('.thumb'));
+
+  function isSingle(){ return window.matchMedia('(max-width: 719px)').matches; }
+  function spreadForPage(p){ return p === 0 ? 0 : (p === 3 ? 2 : 1); }
+  function firstPageOfSpread(s){ return s === 0 ? 0 : (s === 1 ? 1 : 3); }
+  function labelForSpread(s){
+    if(s === 0) return '<strong>Cover</strong> · Page 1 of 4';
+    if(s === 1) return '<strong>Pages 2–3</strong> of 4';
+    return '<strong>Back cover</strong> · Page 4 of 4';
+  }
+  function labelForPage(p){
+    if(p === 0) return '<strong>Cover</strong> · Page 1 of 4';
+    if(p === 3) return '<strong>Back cover</strong> · Page 4 of 4';
+    return '<strong>Page ' + (p + 1) + '</strong> of 4';
+  }
+  function currentPrimaryPage(){ return isSingle() ? pageIndex : firstPageOfSpread(spreadIndex); }
+
+  function render(){
+    leaf1.classList.toggle('flipped', spreadIndex >= 1);
+    leaf2.classList.toggle('flipped', spreadIndex >= 2);
+    leaf1.style.zIndex = spreadIndex >= 1 ? 1 : 2;
+    leaf2.style.zIndex = spreadIndex >= 2 ? 2 : 1;
+    if(!singleAnimating){
+      singleImg.src = PAGES[pageIndex].src;
+      singleImg.alt = PAGES[pageIndex].alt;
+      singleUnder.src = PAGES[pageIndex].src;
+    }
+    pageInd.innerHTML = isSingle() ? labelForPage(pageIndex) : labelForSpread(spreadIndex);
+    var atStart = isSingle() ? pageIndex === 0 : spreadIndex === 0;
+    var atEnd = isSingle() ? pageIndex === TOTAL - 1 : spreadIndex === 2;
+    btnPrev.disabled = atStart; btnNext.disabled = atEnd;
+    edgePrev.disabled = atStart; edgeNext.disabled = atEnd;
+    var primary = currentPrimaryPage();
+    thumbs.forEach(function(t){
+      var p = parseInt(t.getAttribute('data-page'), 10) - 1;
+      var active;
+      if(isSingle()) active = (p === pageIndex);
+      else if(spreadIndex === 1) active = (p === 1 || p === 2);
+      else active = (p === primary);
+      t.setAttribute('aria-current', active ? 'true' : 'false');
+    });
+  }
+
+  function flipToSpread(target){
+    if(target === spreadIndex || target < 0 || target > 2) return;
+    var leaf = (target > spreadIndex) ? (spreadIndex === 0 ? leaf1 : leaf2) : (spreadIndex === 2 ? leaf2 : leaf1);
+    spreadIndex = target;
+    pageIndex = firstPageOfSpread(spreadIndex);
+    leaf.classList.add('turning');
+    animating = true;
+    render();
+    setTimeout(function(){
+      leaf1.style.zIndex = spreadIndex >= 1 ? 1 : 2;
+      leaf2.style.zIndex = spreadIndex >= 2 ? 2 : 1;
+    }, 340);
+    setTimeout(function(){ leaf.classList.remove('turning'); animating = false; }, 740);
+  }
+
+  function flipToPage(target, dir){
+    if(singleAnimating || target === pageIndex || target < 0 || target >= TOTAL) return;
+    var forward = typeof dir === 'boolean' ? dir : target > pageIndex;
+    var from = pageIndex;
+    pageIndex = target;
+    spreadIndex = spreadForPage(pageIndex);
+    singleAnimating = true;
+    animating = true;
+    render();
+    if(forward){
+      singleUnder.src = PAGES[target].src;
+      singleImg.src = PAGES[from].src;
+      singleImg.alt = PAGES[from].alt;
+      singleTop.style.transform = 'rotateY(0deg)';
+      void singleFrame.offsetWidth;
+      singleTop.classList.add('curling');
+      singleShade.classList.add('curling');
+      singleShade.style.opacity = '1';
+      singleTop.style.transform = 'rotateY(-94deg)';
+    } else {
+      singleUnder.src = PAGES[from].src;
+      singleImg.src = PAGES[target].src;
+      singleImg.alt = PAGES[target].alt;
+      singleTop.style.transform = 'rotateY(-94deg)';
+      singleShade.style.opacity = '1';
+      void singleFrame.offsetWidth;
+      singleTop.classList.add('curling');
+      singleShade.classList.add('curling');
+      singleShade.style.opacity = '0';
+      singleTop.style.transform = 'rotateY(0deg)';
+    }
+    setTimeout(function(){
+      singleTop.classList.remove('curling');
+      singleTop.style.transform = '';
+      singleShade.classList.remove('curling');
+      singleShade.style.opacity = '';
+      singleAnimating = false;
+      animating = false;
+      render();
+    }, 610);
+  }
+
+  function next(){ if(animating) return; if(isSingle()) flipToPage(pageIndex + 1, true); else flipToSpread(spreadIndex + 1); }
+  function prev(){ if(animating) return; if(isSingle()) flipToPage(pageIndex - 1, false); else flipToSpread(spreadIndex - 1); }
+  function goToPage(p){
+    if(isSingle()){ flipToPage(p, p > pageIndex); }
+    else {
+      var s = spreadForPage(p);
+      if(s !== spreadIndex) flipToSpread(s);
+      pageIndex = firstPageOfSpread(s);
+      render();
+    }
+    document.getElementById('flipbook').scrollIntoView({ behavior:'smooth', block:'start' });
+  }
+
+  btnNext.addEventListener('click', next);
+  btnPrev.addEventListener('click', prev);
+  edgeNext.addEventListener('click', next);
+  edgePrev.addEventListener('click', prev);
+  thumbs.forEach(function(t){
+    t.addEventListener('click', function(){ goToPage(parseInt(t.getAttribute('data-page'), 10) - 1); });
+  });
+  document.addEventListener('keydown', function(e){
+    if(document.getElementById('lightbox').classList.contains('open')) return;
+    var stage = document.getElementById('stage');
+    var r = stage.getBoundingClientRect();
+    var near = r.bottom > 0 && r.top < window.innerHeight;
+    if(!near) return;
+    if(e.key === 'ArrowRight') next();
+    else if(e.key === 'ArrowLeft') prev();
+  });
+  var touchX = null;
+  function onTouchStart(e){ touchX = e.changedTouches ? e.changedTouches[0].clientX : null; }
+  function onTouchEnd(e){
+    if(touchX === null) return;
+    var dx = e.changedTouches[0].clientX - touchX;
+    if(Math.abs(dx) > 48){ if(dx < 0) next(); else prev(); }
+    touchX = null;
+  }
+  ['book','singleFrame'].forEach(function(id){
+    var el = document.getElementById(id);
+    el.addEventListener('touchstart', onTouchStart, { passive:true });
+    el.addEventListener('touchend', onTouchEnd, { passive:true });
+  });
+  document.getElementById('btnFull').addEventListener('click', function(){
+    var stage = document.getElementById('stage');
+    if(document.fullscreenElement){ document.exitFullscreen(); }
+    else if(stage.requestFullscreen){ stage.requestFullscreen(); }
+  });
+
+  /* Lightbox */
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lbImg');
+  var lbInd = document.getElementById('lbInd');
+  var lbPrev = document.getElementById('lbPrev');
+  var lbNext = document.getElementById('lbNext');
+  var lbPage = 0;
+  function renderLb(){
+    lbImg.src = PAGES[lbPage].src;
+    lbImg.alt = PAGES[lbPage].alt;
+    lbInd.innerHTML = labelForPage(lbPage);
+    lbPrev.disabled = lbPage === 0;
+    lbNext.disabled = lbPage === TOTAL - 1;
+  }
+  document.getElementById('btnZoom').addEventListener('click', function(){
+    lbPage = currentPrimaryPage();
+    renderLb();
+    lb.classList.add('open');
+    document.getElementById('lbClose').focus();
+  });
+  function closeLb(){ lb.classList.remove('open'); }
+  document.getElementById('lbClose').addEventListener('click', closeLb);
+  lb.addEventListener('click', function(e){ if(e.target === lb) closeLb(); });
+  lbPrev.addEventListener('click', function(){ if(lbPage > 0){ lbPage--; renderLb(); } });
+  lbNext.addEventListener('click', function(){ if(lbPage < TOTAL - 1){ lbPage++; renderLb(); } });
+  document.addEventListener('keydown', function(e){
+    if(!lb.classList.contains('open')) return;
+    if(e.key === 'Escape') closeLb();
+    else if(e.key === 'ArrowRight' && lbPage < TOTAL - 1){ lbPage++; renderLb(); }
+    else if(e.key === 'ArrowLeft' && lbPage > 0){ lbPage--; renderLb(); }
+  });
+
+  window.addEventListener('resize', function(){ render(); });
+  render();
+})();
+</script>
+</body>
+</html>
